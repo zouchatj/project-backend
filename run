@@ -1,0 +1,9 @@
+#/bin/bash
+
+if ! command -v java &> /dev/null; then
+    echo "Java not found. Please install Java to run the application."
+    exit 1
+fi
+echo "Swagger-URL = http://localhost:8080/swagger-ui/index.html"
+echo "Demo Frontend = http://localhost:8080"
+java -jar project.jar
